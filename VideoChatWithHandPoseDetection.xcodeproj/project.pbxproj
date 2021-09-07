@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5A5099290EFB763E4F8E94C /* Pods_VideoChatWithHandPoseDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83F4EABBF932BE0C0EE1D21 /* Pods_VideoChatWithHandPoseDetection.framework */; };
+		D77209FC26E7184D00094802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77209FB26E7184D00094802 /* AppDelegate.swift */; };
+		D77209FE26E7184D00094802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77209FD26E7184D00094802 /* SceneDelegate.swift */; };
+		D7720A0026E7184D00094802 /* VideoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77209FF26E7184D00094802 /* VideoChatViewController.swift */; };
+		D7720A0526E7185300094802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7720A0426E7185300094802 /* Assets.xcassets */; };
+		D7720A0826E7185300094802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7720A0626E7185300094802 /* LaunchScreen.storyboard */; };
+		D7720A1626E73A7C00094802 /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A1426E73A7C00094802 /* Finger.swift */; };
+		D7720A1726E73A7C00094802 /* Arbiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A1526E73A7C00094802 /* Arbiter.swift */; };
+		D7720A1926E73AA700094802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7720A1826E73AA600094802 /* Main.storyboard */; };
+		D7720A2026E73B3800094802 /* FingerPointsCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A1F26E73B3800094802 /* FingerPointsCanvasView.swift */; };
+		D7720A2726E743E900094802 /* AgoraMediaRawData.m in Sources */ = {isa = PBXBuildFile; fileRef = D7720A2426E743E800094802 /* AgoraMediaRawData.m */; };
+		D7720A2826E743E900094802 /* AgoraMediaDataPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7720A2626E743E900094802 /* AgoraMediaDataPlugin.mm */; };
+		D7720A2B26E7445300094802 /* RtcExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A2A26E7445300094802 /* RtcExtension.swift */; };
+		D7720A2D26E7446700094802 /* RtmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A2C26E7446700094802 /* RtmExtension.swift */; };
+		D7720A2F26E7447600094802 /* RawDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A2E26E7447600094802 /* RawDataExtension.swift */; };
+		D7720A3126E745B700094802 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7720A3026E745B700094802 /* Authenticator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68052614BBBFBF22D999F367 /* Pods-VideoChatWithHandPoseDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChatWithHandPoseDetection.release.xcconfig"; path = "Target Support Files/Pods-VideoChatWithHandPoseDetection/Pods-VideoChatWithHandPoseDetection.release.xcconfig"; sourceTree = "<group>"; };
+		CBDDD898D25DEC67C9199593 /* Pods-VideoChatWithHandPoseDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChatWithHandPoseDetection.debug.xcconfig"; path = "Target Support Files/Pods-VideoChatWithHandPoseDetection/Pods-VideoChatWithHandPoseDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		D77209F826E7184D00094802 /* VideoChatWithHandPoseDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChatWithHandPoseDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77209FB26E7184D00094802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D77209FD26E7184D00094802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D77209FF26E7184D00094802 /* VideoChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatViewController.swift; sourceTree = "<group>"; };
+		D7720A0426E7185300094802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7720A0726E7185300094802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7720A0926E7185300094802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7720A1426E73A7C00094802 /* Finger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		D7720A1526E73A7C00094802 /* Arbiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arbiter.swift; sourceTree = "<group>"; };
+		D7720A1826E73AA600094802 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D7720A1A26E73AC500094802 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		D7720A1F26E73B3800094802 /* FingerPointsCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerPointsCanvasView.swift; sourceTree = "<group>"; };
+		D7720A2226E743E700094802 /* VideoChatWithHandPoseDetection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoChatWithHandPoseDetection-Bridging-Header.h"; sourceTree = "<group>"; };
+		D7720A2326E743E800094802 /* AgoraMediaRawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraMediaRawData.h; sourceTree = "<group>"; };
+		D7720A2426E743E800094802 /* AgoraMediaRawData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraMediaRawData.m; sourceTree = "<group>"; };
+		D7720A2526E743E900094802 /* AgoraMediaDataPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraMediaDataPlugin.h; sourceTree = "<group>"; };
+		D7720A2626E743E900094802 /* AgoraMediaDataPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraMediaDataPlugin.mm; sourceTree = "<group>"; };
+		D7720A2A26E7445300094802 /* RtcExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcExtension.swift; sourceTree = "<group>"; };
+		D7720A2C26E7446700094802 /* RtmExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtmExtension.swift; sourceTree = "<group>"; };
+		D7720A2E26E7447600094802 /* RawDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataExtension.swift; sourceTree = "<group>"; };
+		D7720A3026E745B700094802 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		E83F4EABBF932BE0C0EE1D21 /* Pods_VideoChatWithHandPoseDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChatWithHandPoseDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D77209F526E7184D00094802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A5099290EFB763E4F8E94C /* Pods_VideoChatWithHandPoseDetection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		785D7C42C8326B9C15CEBF7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDD898D25DEC67C9199593 /* Pods-VideoChatWithHandPoseDetection.debug.xcconfig */,
+				68052614BBBFBF22D999F367 /* Pods-VideoChatWithHandPoseDetection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A207733ED23746CDC9B03DBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83F4EABBF932BE0C0EE1D21 /* Pods_VideoChatWithHandPoseDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77209EF26E7184D00094802 = {
+			isa = PBXGroup;
+			children = (
+				D77209FA26E7184D00094802 /* VideoChatWithHandPoseDetection */,
+				D77209F926E7184D00094802 /* Products */,
+				785D7C42C8326B9C15CEBF7A /* Pods */,
+				A207733ED23746CDC9B03DBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D77209F926E7184D00094802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D77209F826E7184D00094802 /* VideoChatWithHandPoseDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D77209FA26E7184D00094802 /* VideoChatWithHandPoseDetection */ = {
+			isa = PBXGroup;
+			children = (
+				D7720A2926E7443D00094802 /* Extensions */,
+				D7720A2126E743DB00094802 /* Header Files */,
+				D7720A1326E71A6A00094802 /* Supporting Files */,
+				D7720A1226E71A6200094802 /* StoryBoard */,
+				D7720A1126E719A700094802 /* Controller */,
+				D7720A1026E719A200094802 /* View */,
+				D7720A0F26E7199C00094802 /* Model */,
+				D7720A0926E7185300094802 /* Info.plist */,
+			);
+			path = VideoChatWithHandPoseDetection;
+			sourceTree = "<group>";
+		};
+		D7720A0F26E7199C00094802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7720A1526E73A7C00094802 /* Arbiter.swift */,
+				D7720A1426E73A7C00094802 /* Finger.swift */,
+				D7720A3026E745B700094802 /* Authenticator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7720A1026E719A200094802 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7720A1F26E73B3800094802 /* FingerPointsCanvasView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7720A1126E719A700094802 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D77209FF26E7184D00094802 /* VideoChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7720A1226E71A6200094802 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D7720A1826E73AA600094802 /* Main.storyboard */,
+				D7720A0626E7185300094802 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		D7720A1326E71A6A00094802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D77209FB26E7184D00094802 /* AppDelegate.swift */,
+				D77209FD26E7184D00094802 /* SceneDelegate.swift */,
+				D7720A0426E7185300094802 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7720A2126E743DB00094802 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7720A2526E743E900094802 /* AgoraMediaDataPlugin.h */,
+				D7720A2626E743E900094802 /* AgoraMediaDataPlugin.mm */,
+				D7720A2326E743E800094802 /* AgoraMediaRawData.h */,
+				D7720A2426E743E800094802 /* AgoraMediaRawData.m */,
+				D7720A2226E743E700094802 /* VideoChatWithHandPoseDetection-Bridging-Header.h */,
+				D7720A1A26E73AC500094802 /* BridgingHeader.h */,
+			);
+			path = "Header Files";
+			sourceTree = "<group>";
+		};
+		D7720A2926E7443D00094802 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7720A2A26E7445300094802 /* RtcExtension.swift */,
+				D7720A2C26E7446700094802 /* RtmExtension.swift */,
+				D7720A2E26E7447600094802 /* RawDataExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D77209F726E7184D00094802 /* VideoChatWithHandPoseDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7720A0C26E7185300094802 /* Build configuration list for PBXNativeTarget "VideoChatWithHandPoseDetection" */;
+			buildPhases = (
+				0D6E045F351D57052F3A2114 /* [CP] Check Pods Manifest.lock */,
+				D77209F426E7184D00094802 /* Sources */,
+				D77209F526E7184D00094802 /* Frameworks */,
+				D77209F626E7184D00094802 /* Resources */,
+				EA33EBA48441FD22B01DB146 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoChatWithHandPoseDetection;
+			productName = VideoChatWithHandPoseDetection;
+			productReference = D77209F826E7184D00094802 /* VideoChatWithHandPoseDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D77209F026E7184D00094802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D77209F726E7184D00094802 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = D77209F326E7184D00094802 /* Build configuration list for PBXProject "VideoChatWithHandPoseDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D77209EF26E7184D00094802;
+			productRefGroup = D77209F926E7184D00094802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D77209F726E7184D00094802 /* VideoChatWithHandPoseDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D77209F626E7184D00094802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7720A1926E73AA700094802 /* Main.storyboard in Resources */,
+				D7720A0826E7185300094802 /* LaunchScreen.storyboard in Resources */,
+				D7720A0526E7185300094802 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D6E045F351D57052F3A2114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoChatWithHandPoseDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA33EBA48441FD22B01DB146 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoChatWithHandPoseDetection/Pods-VideoChatWithHandPoseDetection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoChatWithHandPoseDetection/Pods-VideoChatWithHandPoseDetection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoChatWithHandPoseDetection/Pods-VideoChatWithHandPoseDetection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D77209F426E7184D00094802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7720A0026E7184D00094802 /* VideoChatViewController.swift in Sources */,
+				D7720A1726E73A7C00094802 /* Arbiter.swift in Sources */,
+				D7720A2826E743E900094802 /* AgoraMediaDataPlugin.mm in Sources */,
+				D7720A2F26E7447600094802 /* RawDataExtension.swift in Sources */,
+				D7720A2D26E7446700094802 /* RtmExtension.swift in Sources */,
+				D7720A3126E745B700094802 /* Authenticator.swift in Sources */,
+				D7720A2026E73B3800094802 /* FingerPointsCanvasView.swift in Sources */,
+				D7720A2B26E7445300094802 /* RtcExtension.swift in Sources */,
+				D77209FC26E7184D00094802 /* AppDelegate.swift in Sources */,
+				D7720A1626E73A7C00094802 /* Finger.swift in Sources */,
+				D7720A2726E743E900094802 /* AgoraMediaRawData.m in Sources */,
+				D77209FE26E7184D00094802 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7720A0626E7185300094802 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7720A0726E7185300094802 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7720A0A26E7185300094802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7720A0B26E7185300094802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7720A0D26E7185300094802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDDD898D25DEC67C9199593 /* Pods-VideoChatWithHandPoseDetection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D88G68459D;
+				INFOPLIST_FILE = VideoChatWithHandPoseDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = littlered.VideoChatWithHandPoseDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoChatWithHandPoseDetection/Header Files/VideoChatWithHandPoseDetection-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "VideoChatWithHandPoseDetection/Header Files/VideoChatWithHandPoseDetection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7720A0E26E7185300094802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68052614BBBFBF22D999F367 /* Pods-VideoChatWithHandPoseDetection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D88G68459D;
+				INFOPLIST_FILE = VideoChatWithHandPoseDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = littlered.VideoChatWithHandPoseDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoChatWithHandPoseDetection/Header Files/VideoChatWithHandPoseDetection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D77209F326E7184D00094802 /* Build configuration list for PBXProject "VideoChatWithHandPoseDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7720A0A26E7185300094802 /* Debug */,
+				D7720A0B26E7185300094802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7720A0C26E7185300094802 /* Build configuration list for PBXNativeTarget "VideoChatWithHandPoseDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7720A0D26E7185300094802 /* Debug */,
+				D7720A0E26E7185300094802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D77209F026E7184D00094802 /* Project object */;
+}
